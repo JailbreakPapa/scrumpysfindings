@@ -42,12 +42,12 @@ export const metadata: Metadata = {
     other: [
       {
         rel: 'icon',
-        url: '/favicon.png',
+        url: '/favicon.ico',
         sizes: '32x32',
       },
       {
         rel: 'icon',
-        url: '/favicon.png',
+        url: '/favicon.ico',
         sizes: '16x16',
       },
     ],

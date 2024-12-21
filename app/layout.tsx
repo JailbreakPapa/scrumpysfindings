@@ -50,6 +50,16 @@ export const metadata: Metadata = {
         url: '/favicon.ico',
         sizes: '16x16',
       },
+      {
+        rel: 'icon',
+        url: '/favicon.ico',
+        sizes: '192x192',
+      },
+      {
+        rel: 'icon',
+        url: '/favicon-96x96.ico',
+        sizes: '96x96',
+      }
     ],
   },
   openGraph: {

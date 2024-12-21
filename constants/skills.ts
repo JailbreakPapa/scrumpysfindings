@@ -13,7 +13,7 @@ export const skills = [
       background: 'var(--black--bean)',
     },
     content:
-      'I specialize in front-end architectures that scale as your applications and teams grow, using modular structures and efficient workflows.',
+      'My work is designed to scale with ease, from small projects to large applications, ensuring they are maintainable and future-proof.',
   },
   {
     id: 'Performance',
@@ -27,7 +27,7 @@ export const skills = [
       background: 'var(--downriver)',
     },
     content:
-      'I ensure front-end applications are optimized for speed, responsiveness, and seamless user experiences as they are efficient for developers.',
+      'I ensure that the applications/tools I build are performant, fast, and efficient, providing a seamless user experience, making sure to do performance tests with every release, and optimizing where necessary.',
   },
   {
     id: 'modularity',
@@ -41,36 +41,27 @@ export const skills = [
       background: 'var(--rose-of--sharon-2)',
     },
     content:
-      'I create reusable components, libraries, and tools that empower teams to build consistent and efficient front-end solutions at scale.',
+      'I create reusable code in the form of libraries(Plugins), Use Multiplatform BuildSystems that work on Consoles & use code across projects, and make sure that the code is easy to maintain and update.',
   },
 ];
 
 export const slugs = [
   'typescript',
   'javascript',
+  'c++',
+  'c#',
+  'vulkan',
+  'directx12 PC & Xbox',
   'react',
   'html5',
   'css3',
-  'nodedotjs',
-  'express',
   'nextdotjs',
-  'prisma',
   'amazonaws',
-  'postgresql',
-  'firebase',
-  'vercel',
-  'testinglibrary',
-  'jest',
-  'cypress',
-  'docker',
   'git',
   'github',
   'gitlab',
   'visualstudiocode',
   'figma',
-  'rubyonrails',
-  'ruby',
-  'mongodb',
 ];
 
 export const techs = [
@@ -85,7 +76,7 @@ export const techs = [
     bgColor: '#1E5D92', // Darker blue
   },
   {
-    label: 'react',
+    label: 'c++',
     textColor: '#61DAFB', // Brighter light blue
     bgColor: '#4B9FC9', // Darker blue
   },
@@ -100,7 +91,7 @@ export const techs = [
     bgColor: '#1E4D92', // Darker blue
   },
   {
-    label: 'tanstack',
+    label: 'directx',
     textColor: '#3178f6', // Brighter blue
     bgColor: '#1E5Df2', // Darker blue
   },
@@ -125,12 +116,12 @@ export const techs = [
     bgColor: '#9B4F6C', // Darker pink
   },
   {
-    label: 'webpack',
+    label: 'c#',
     textColor: '#DB7093', // Brighter pink
     bgColor: '#9B4F6C', // Darker pink
   },
   {
-    label: 'rollup',
+    label: 'perforce',
     textColor: '#DB7093', // Brighter pink
     bgColor: '#9B4F6C', // Darker pink
   },
@@ -140,24 +131,9 @@ export const techs = [
     bgColor: '#4E8B4A', // Darker green
   },
   {
-    label: 'mongodb',
+    label: 'vulkan',
     textColor: '#47A248', // Brighter green
     bgColor: '#2C6A2F', // Darker green
-  },
-  {
-    label: 'express',
-    textColor: '#000000', // Bright black (neutral)
-    bgColor: '#333333', // Darker black (neutral)
-  },
-  {
-    label: 'jest',
-    textColor: '#C03C44', // Brighter red
-    bgColor: '#9A1F28', // Darker red
-  },
-  {
-    label: 'vitest',
-    textColor: '#6A3B97', // Brighter purple
-    bgColor: '#4E2C6C', // Darker purple
   },
   {
     label: 'ci/cd',
@@ -171,11 +147,6 @@ export const techs = [
   },
   {
     label: 'github',
-    textColor: '#6A3B97', // Brighter purple
-    bgColor: '#4E2C6C', // Darker purple
-  },
-  {
-    label: 'nx',
     textColor: '#6A3B97', // Brighter purple
     bgColor: '#4E2C6C', // Darker purple
   },

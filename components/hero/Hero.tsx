@@ -8,20 +8,20 @@ const Hero = () => {
     <section className="relative px-6 pb-44" style={{ contain: 'layout' }}>
       <div className="pt-48">
         <h1 className="h1-bold flex flex-col items-start md:items-center">
-          <span>Crafting</span>
-          <span>memorable user &</span>
-          <span>developer experiences</span>
+          <span>Creating Amazing Software</span>
+          <span>&</span>
+          <span>Living Life.</span>
         </h1>
       </div>
 
       <div className="mt-12 flex flex-col-reverse gap-8 md:flex-row md:justify-center md:gap-20 lg:gap-32">
         <div className="flex w-fit flex-col items-start gap-4">
           <p className="font-Silkscreen font-normal uppercase text-gray-400 md:mt-8 md:text-2xl">
-            adel.g · software engineer
+            Mikael K. Aboagye - C++/C# Software Engineer
           </p>
           <div>
             <Link
-              href="https://www.linkedin.com/in/adelguitoun/"
+              href="https://www.linkedin.com/in/mikael-aboagye-77215225b/"
               target="_blank"
             >
               <AnimatedGradientText className="rounded-full px-5 py-2 text-lg hover:cursor-pointer">
@@ -31,7 +31,7 @@ const Hero = () => {
                     `inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`,
                   )}
                 >
-                  Start a collaboration
+                  Lets Start Something.
                 </span>
               </AnimatedGradientText>
             </Link>
@@ -43,16 +43,16 @@ const Hero = () => {
             Building...
           </p>
           <p className="w-fit rounded-md bg-celtic px-2 font-Silkscreen text-[18px] font-normal uppercase">
-            <span className="text-oceangreen">Well designed</span>
+            <span className="text-oceangreen">Complex</span>
           </p>
           <p className="w-fit rounded-md bg-downriver px-2 font-Silkscreen text-[18px] font-normal uppercase">
-            <span className="text-dodgerblue">well architected</span>
+            <span className="text-dodgerblue">Mind Blowing</span>
           </p>
           <p className="w-fit rounded-md bg-antiquebronze px-2 font-Silkscreen text-[18px] font-normal uppercase">
-            <span className="text-foreground">and scalable</span>
+            <span className="text-foreground">And Scalable</span>
           </p>
           <p className="w-fit rounded-md bg-revolver px-2 font-Silkscreen text-[18px] font-normal uppercase">
-            <span className="text-violet-400/85">web apps</span>
+            <span className="text-violet-400/85">Engines & Game Tools!</span>
           </p>
         </div>
       </div>

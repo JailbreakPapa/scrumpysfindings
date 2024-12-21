@@ -6,10 +6,7 @@ const Articles = () => {
       <div>
         <h2 className="h2-bold">Highlighted articles</h2>
         <p className="regular-paragraph mt-8 max-w-[835px]">
-          I share insights and knowledge through articles focused on modern
-          technologies, with a special emphasis on front-end development. From
-          best practices to deep dives into frameworks and tools, these writings
-          aim to educate and inspire developers at all levels.
+          I share insights about what Im learning, what Im working on, Insights about The Games Industry, Middleware, and anything else that comes to mind. Here are some of my latest articles:
         </p>
       </div>
 

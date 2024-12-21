@@ -19,17 +19,22 @@ const silkscreen = Silkscreen({
 });
 
 export const metadata: Metadata = {
-  title: 'Adel Guitoun',
-  description: `Hi 👋, I'm Adel Guitoun. I'm a passionate software engineer with a knack for creating scalable, high-performance applications and reusable systems. With a strong foundation in front-end and back-end technologies, I specialize in crafting solutions that are as impactful for users as they are efficient for developers.`,
-  creator: 'Adel Guitoun',
-  applicationName: 'My website',
+  title: 'Mikael K. Aboagye',
+  description: `Hi 👋, Hi 👋, I'm Mikael Aboagye, Im a passionate c++ software engineer with a knack for creating scalable, high-performance software and amazingly rendered graphics. With a strong foundation in Graphics Programming and Consoles, I have the experience, and the knowledge to deliver amazing worlds to people around the world.`,
+  creator: 'Mikael Kwaku Aboagye',
+  applicationName: 'scrumpysfindings',
   keywords: [
-    'Adel Guitoun',
-    'Adel',
-    'Guitoun',
+    'Mikael Aboagye',
+    'Mikael',
+    'Aboagye',
     'Portfolio',
-    'Next.js',
+    'C++',
     'Software engineer',
+    'Aperture UI',
+    'WD Studios',
+    'Watch Dogs',
+    'Phantom Corporation',
+    'Phantom',
   ],
   icons: {
     icon: './favicon.ico',
@@ -37,36 +42,36 @@ export const metadata: Metadata = {
     other: [
       {
         rel: 'icon',
-        url: '/favicon-32x32.png',
+        url: '/favicon.png',
         sizes: '32x32',
       },
       {
         rel: 'icon',
-        url: '/favicon-16x16.png',
+        url: '/favicon.png',
         sizes: '16x16',
       },
     ],
   },
   openGraph: {
     type: 'website',
-    url: 'https://www.adelguitoun.com',
-    title: 'Adel Guitoun - Software Engineer',
-    description: `Hi 👋, I'm Adel Guitoun. I'm a passionate software engineer with a knack for creating scalable, high-performance applications and reusable systems. With a strong foundation in front-end and back-end technologies, I specialize in crafting solutions that are as impactful for users as they are efficient for developers.`,
+    url: 'https://scrumpysfindings.me',
+    title: 'Mikael Aboagye - Software Engineer',
+    description: `Hi 👋, I'm Mikael Aboagye, Im a passionate c++ software engineer with a knack for creating scalable, high-performance software and amazingly rendered graphics. With a strong foundation in Graphics Programming and Consoles, I have the experience, and the knowledge to deliver amazing worlds to people around the world.`,
     images: [
       {
-        url: '/opengraph-image.jpg',
+        url: '/67095081.png',
         width: 1200,
         height: 628,
-        alt: 'Adel Guitoun',
+        alt: 'Mikael Aboagye',
       },
     ],
   },
   twitter: {
-    title: 'Adel Guitoun - Software Engineer',
-    description: `Hi 👋, I'm Adel Guitoun. I'm a passionate software engineer with a knack for creating scalable, high-performance applications and reusable systems. With a strong foundation in front-end and back-end technologies, I specialize in crafting solutions that are as impactful for users as they are efficient for developers.`,
+    title: 'Mikael Aboagye',
+    description: `Hi 👋, I'm Mikael Aboagye, Im a passionate c++ software engineer with a knack for creating scalable, high-performance software and amazingly rendered graphics. With a strong foundation in Graphics Programming and Consoles, I have the experience, and the knowledge to deliver amazing worlds to people around the world.`,
     card: 'summary_large_image',
-    site: '@AdelGuitoun',
-    images: '/opengraph-image.jpg',
+    site: '@AmanfoMike',
+    images: '/67095081.png',
   },
   verification: {
     google: 'k83JtkKiU8MvRqLS05NLwZPSOGLJXbZpzln4wdJ-iPI',

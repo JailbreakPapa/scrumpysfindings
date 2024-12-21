@@ -6,9 +6,9 @@ const ProjectsSection = () => {
       <div className="mb-12 space-y-8 px-6 md:mb-0 xl:px-56">
         <h2 className="h2-bold">Projects</h2>
         <p className="regular-paragraph max-w-[835px]">
-          I&apos;ve worked on a wide range of projects, from scalable web
-          applications and reusable UI component libraries to backend APIs and
-          microfrontend architectures. Here are some examples of my latest work:
+          I&apos;ve worked on a wide range of projects, from Games &
+          Game Middleware and helpful libraries to Software APIs all the way to
+          full on Companies. Here are some examples of my latest work:
         </p>
       </div>
 

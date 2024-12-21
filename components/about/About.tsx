@@ -10,14 +10,13 @@ const About = () => {
           <h2 className="h2-bold">About me</h2>
           <p className="regular-paragraph mx-auto max-w-[835px]">
             Hi 👋, I&apos;m{' '}
-            <span className="text-code text-yellow-600">Adel Guitoun</span>, a
-            passionate software engineer with a knack for creating scalable,
-            high-performance applications and reusable systems. With a strong
-            foundation in <span className="text-green-700">frontend</span> and
-            <span className="text-blue-600"> backend technologies</span>, I
-            specialize in crafting solutions that are as impactful for{' '}
-            <span className="text-orange-500">users</span> as they are efficient
-            for <span className="text-purple-600">developers.</span>
+            <span className="text-code text-yellow-600">Mikael Aboagye</span>, Im
+            a passionate c++ software engineer with a knack for creating scalable,
+            high-performance software and amazingly rendered graphics. With a strong
+            foundation in <span className="text-green-700">Graphics Programming</span> and
+            <span className="text-blue-600"> Consoles</span>, I
+            have the experience, and the knowledge to deliver amazing worlds to people around the world.{' '}
+            
           </p>
         </div>
 

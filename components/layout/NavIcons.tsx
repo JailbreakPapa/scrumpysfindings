@@ -5,13 +5,13 @@ const NavIcons = () => {
   return (
     <div className="flex items-center gap-4 md:gap-8">
       <Link
-        href="https://github.com/adel-gu"
+        href="https://github.com/JailbreakPapa"
         className="group flex items-center justify-center gap-x-1.5"
         target="_blank"
       >
         <Image
           src="/github.svg"
-          alt="Link to Adel's gitHub profile"
+          alt="Link to Mikael's gitHub profile"
           width={25}
           height={25}
         />
@@ -20,13 +20,13 @@ const NavIcons = () => {
         </span>
       </Link>
       <Link
-        href="https://www.linkedin.com/in/adelguitoun/"
+        href="https://www.linkedin.com/in/mikael-aboagye-77215225b/"
         className="group flex items-center justify-center gap-x-1.5"
         target="_blank"
       >
         <Image
           src="/linkedin.svg"
-          alt="Link to Adel's linkedin profile"
+          alt="Link to Mikael's linkedin profile"
           width={28}
           height={28}
         />

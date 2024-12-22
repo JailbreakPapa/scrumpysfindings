@@ -20,7 +20,7 @@ const silkscreen = Silkscreen({
 
 export const metadata: Metadata = {
   title: 'Mikael K. Aboagye',
-  description: `Hi 👋, Hi 👋, I'm Mikael Aboagye, Im a passionate c++ software engineer with a knack for creating scalable, high-performance software and amazingly rendered graphics. With a strong foundation in Graphics Programming and Consoles, I have the experience, and the knowledge to deliver amazing worlds to people around the world.`,
+  description: `Hi 👋, Hi 👋, I'm Mikael Aboagye, Im a passionate c++ software engineer with a knack for creating scalable, high-performance software and amazingly rendered graphics. With a strong foundation in Graphics Programming and Consoles, Everyday, I attempt to make worlds that can make someone smile.`,
   creator: 'Mikael Kwaku Aboagye',
   applicationName: 'scrumpysfindings',
   keywords: [
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     type: 'website',
     url: 'https://scrumpysfindings.me',
     title: 'Mikael Aboagye - Software Engineer',
-    description: `Hi 👋, I'm Mikael Aboagye, Im a passionate c++ software engineer with a knack for creating scalable, high-performance software and amazingly rendered graphics. With a strong foundation in Graphics Programming and Consoles, I have the experience, and the knowledge to deliver amazing worlds to people around the world.`,
+    description: `Hi 👋, I'm Mikael Aboagye, Im a passionate c++ software engineer with a knack for creating scalable, high-performance software and amazingly rendered graphics. With a strong foundation in Graphics Programming and Consoles, Everyday, I attempt to make worlds that can make someone smile.`,
     images: [
       {
         url: '/67095081.png',
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     title: 'Mikael Aboagye',
-    description: `Hi 👋, I'm Mikael Aboagye, Im a passionate c++ software engineer with a knack for creating scalable, high-performance software and amazingly rendered graphics. With a strong foundation in Graphics Programming and Consoles, I have the experience, and the knowledge to deliver amazing worlds to people around the world.`,
+    description: `Hi 👋, I'm Mikael Aboagye, Im a passionate c++ software engineer with a knack for creating scalable, high-performance software and amazingly rendered graphics. With a strong foundation in Graphics Programming and Consoles, Everyday, I attempt to make worlds that can make someone smile.`,
     card: 'summary_large_image',
     site: '@AmanfoMike',
     images: '/67095081.png',

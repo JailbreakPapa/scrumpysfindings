@@ -2,15 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: hsl(0, 0%, 8%);
-}
-
 @layer base {
   :root {
-    /* COLORS */
-    --background: 0 0 8%;
-    --foreground: 0 100% 100%;
+    /* LIGHT MODE COLORS */
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
@@ -35,6 +31,24 @@ body {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
 
+    /* Custom Win96 Light Mode Colors */
+    --win96-bg: #c0c0c0;
+    --win96-bg-secondary: #f0f0f0;
+    --win96-border-light: #ffffff;
+    --win96-border-dark: #808080;
+    --win96-titlebar: linear-gradient(90deg, #0066cc 0%, #004499 100%);
+    --win96-titlebar-text: #ffffff;
+    --win96-button-bg: #c0c0c0;
+    --win96-text: #000000;
+    --win96-text-secondary: #404040;
+    --win96-desktop-bg: linear-gradient(
+      45deg,
+      #008080 0%,
+      #20b2aa 50%,
+      #008080 100%
+    );
+
+    /* Original Custom Colors */
     --white--ice: rgba(225, 240, 255, 1);
     --solitude: rgba(234, 246, 255, 1);
     --tundora: rgba(66, 66, 66, 1);
@@ -72,6 +86,46 @@ body {
     --supernova: rgba(247, 206, 0, 1);
     --tan--hide: rgba(250, 147, 78, 1);
     --silver--chalice: rgba(165, 165, 165, 1);
+  }
+
+  .dark {
+    /* DARK MODE COLORS */
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+
+    /* Custom Win96 Dark Mode Colors */
+    --win96-bg: #404040;
+    --win96-bg-secondary: #2a2a2a;
+    --win96-border-light: #606060;
+    --win96-border-dark: #202020;
+    --win96-titlebar: linear-gradient(90deg, #1a4480 0%, #0d2c5c 100%);
+    --win96-titlebar-text: #ffffff;
+    --win96-button-bg: #404040;
+    --win96-text: #ffffff;
+    --win96-text-secondary: #b0b0b0;
+    --win96-desktop-bg: linear-gradient(
+      45deg,
+      #1a4d4d 0%,
+      #2d6666 50%,
+      #1a4d4d 100%
+    );
   }
 }
 
@@ -111,7 +165,7 @@ body {
 
   .main-mask {
     mask-image: linear-gradient(transparent, rgba(0, 0, 0, 1) 100px);
-    background-image: url('/bg-img.png');
+    background-image: url("/bg-img.png");
     opacity: 0.2;
   }
 
@@ -125,7 +179,7 @@ body {
   }
 
   .grid-pattern {
-    background-image: url('/grid-pattern.png');
+    background-image: url("/grid-pattern.png");
     mask-image: radial-gradient(ellipse at bottom, #000, transparent 50%);
   }
 
@@ -137,18 +191,435 @@ body {
   }
 
   .projects-grid-pattern {
-    background-image: url('/grid-pattern.png');
+    background-image: url("/grid-pattern.png");
     mask-image: linear-gradient(180deg, white, transparent);
   }
 
   .projects-grid-pattern-bottom {
-    background-image: url('/grid-pattern.png');
+    background-image: url("/grid-pattern.png");
     background-position: bottom left;
     mask-image: linear-gradient(0deg, white, transparent);
   }
 
   .blog-grid-pattern {
-    background-image: url('/grid-pattern.png');
+    background-image: url("/grid-pattern.png");
     mask-image: linear-gradient(180deg, white, transparent);
+  }
+
+  /* Windows 96 Style Components */
+  .win96-window {
+    background: var(--win96-bg);
+    border: 2px solid;
+    border-top-color: var(--win96-border-light);
+    border-left-color: var(--win96-border-light);
+    border-right-color: var(--win96-border-dark);
+    border-bottom-color: var(--win96-border-dark);
+    backdrop-filter: blur(10px);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease;
+  }
+
+  .win96-titlebar {
+    @apply flex items-center justify-between px-2 py-1 text-white text-sm border-b-2;
+    background: var(--win96-titlebar);
+    border-bottom-color: var(--win96-border-dark);
+    color: var(--win96-titlebar-text);
+  }
+
+  .win96-content {
+    @apply p-0;
+    background: var(--win96-bg-secondary);
+    color: var(--win96-text);
+  }
+
+  .win96-button {
+    @apply px-3 py-1 text-sm font-normal hover:brightness-110 active:brightness-90 transition-all duration-150 relative cursor-pointer;
+    background: var(--win96-button-bg);
+    color: var(--win96-text);
+    border: 1px solid;
+    border-top-color: var(--win96-border-light);
+    border-left-color: var(--win96-border-light);
+    border-right-color: var(--win96-border-dark);
+    border-bottom-color: var(--win96-border-dark);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    outline: none;
+    user-select: none;
+    pointer-events: auto;
+    z-index: 10;
+  }
+
+  .win96-button:active,
+  .win96-button-pressed {
+    border-top-color: var(--win96-border-dark);
+    border-left-color: var(--win96-border-dark);
+    border-right-color: var(--win96-border-light);
+    border-bottom-color: var(--win96-border-light);
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.2);
+    transform: translateX(1px) translateY(1px);
+  }
+
+  .win96-button-small {
+    @apply px-1 py-1 text-xs;
+  }
+
+  .win96-button-primary {
+    @apply bg-blue-200 hover:bg-blue-300 active:bg-blue-400;
+  }
+
+  .dark .win96-button-primary {
+    @apply bg-blue-800 hover:bg-blue-700 active:bg-blue-900;
+  }
+
+  .win96-button-danger {
+    @apply bg-red-200 hover:bg-red-300 active:bg-red-400;
+  }
+
+  .dark .win96-button-danger {
+    @apply bg-red-800 hover:bg-red-700 active:bg-red-900;
+  }
+
+  .win96-button-close {
+    @apply bg-red-500 hover:bg-red-600 active:bg-red-700 text-white;
+  }
+
+  .win96-button-disabled {
+    @apply opacity-50 cursor-not-allowed;
+  }
+
+  .win96-menu {
+    @apply absolute top-full left-0 mt-1 border-2 shadow-lg z-50 min-w-32;
+    background: var(--win96-bg);
+    border-top-color: var(--win96-border-light);
+    border-left-color: var(--win96-border-light);
+    border-right-color: var(--win96-border-dark);
+    border-bottom-color: var(--win96-border-dark);
+    pointer-events: auto;
+  }
+
+  .win96-menu-item {
+    @apply block w-full px-3 py-2 text-left text-sm hover:bg-blue-600 hover:text-white transition-colors;
+    color: var(--win96-text);
+  }
+
+  .win96-menu-item-disabled {
+    @apply opacity-50 cursor-not-allowed;
+  }
+
+  .win96-menu-separator {
+    @apply border-t mx-1;
+    border-color: var(--win96-border-dark);
+  }
+
+  .win96-taskbar {
+    @apply fixed bottom-0 left-0 right-0 h-10 border-t-2 z-40;
+    background: var(--win96-bg);
+    border-top-color: var(--win96-border-light);
+  }
+
+  .win96-taskbar-content {
+    @apply flex items-center h-full px-2;
+  }
+
+  .win96-text {
+    @apply font-mono;
+    color: var(--win96-text);
+  }
+
+  .win96-tag {
+    @apply inline-flex items-center gap-1 px-2 py-1 text-xs rounded-none;
+    background: var(--win96-bg);
+    color: var(--win96-text);
+    border: 1px solid;
+    border-top-color: var(--win96-border-light);
+    border-left-color: var(--win96-border-light);
+    border-right-color: var(--win96-border-dark);
+    border-bottom-color: var(--win96-border-dark);
+  }
+
+  .win96-desktop {
+    @apply min-h-screen;
+    background: var(--win96-desktop-bg);
+    background-size: 20px 20px;
+    background-image: linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.05) 25%,
+        transparent 25%
+      ),
+      linear-gradient(-45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.05) 75%),
+      linear-gradient(-45deg, transparent 75%, rgba(255, 255, 255, 0.05) 75%);
+  }
+
+  .win96-folder {
+    @apply inline-flex flex-col items-center p-2 rounded hover:bg-blue-600 hover:bg-opacity-30 cursor-pointer transition-colors;
+  }
+
+  .win96-folder-icon {
+    @apply w-12 h-12 bg-yellow-400 border-2 border-yellow-600 relative;
+    clip-path: polygon(
+      0 20%,
+      20% 20%,
+      25% 0,
+      100% 0,
+      100% 80%,
+      75% 100%,
+      0 100%
+    );
+  }
+
+  .retro-crt {
+    position: relative;
+    /* Allow vertical scrolling; prevent horizontal overflow */
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .retro-crt::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(transparent 50%, rgba(0, 255, 0, 0.03) 50%);
+    background-size: 100% 4px;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .retro-crt::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+      ellipse at center,
+      transparent 60%,
+      rgba(0, 0, 0, 0.1) 100%
+    );
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .text-gradient {
+    background: linear-gradient(45deg, #00ffff, #0080ff, #8000ff, #ff0080);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradientShift 3s ease-in-out infinite;
+  }
+
+  @keyframes gradientShift {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  .pixelated {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+  }
+
+  /* Starry night background */
+  .win96-desktop.starry-night {
+    background-color: #050816; /* deep night */
+    background-image:
+      /* big stars */ radial-gradient(
+        2px 2px at 20px 30px,
+        rgba(255, 255, 255, 0.8) 50%,
+        transparent 51%
+      ),
+      radial-gradient(
+        2px 2px at 120px 80px,
+        rgba(255, 255, 255, 0.8) 50%,
+        transparent 51%
+      ),
+      radial-gradient(
+        2px 2px at 200px 150px,
+        rgba(255, 255, 255, 0.8) 50%,
+        transparent 51%
+      ),
+      /* medium stars */
+        radial-gradient(
+          1.5px 1.5px at 60px 140px,
+          rgba(255, 255, 255, 0.7) 50%,
+          transparent 51%
+        ),
+      radial-gradient(
+        1.5px 1.5px at 160px 40px,
+        rgba(255, 255, 255, 0.7) 50%,
+        transparent 51%
+      ),
+      radial-gradient(
+        1.5px 1.5px at 260px 100px,
+        rgba(255, 255, 255, 0.7) 50%,
+        transparent 51%
+      ),
+      /* small stars */
+        radial-gradient(
+          1px 1px at 30px 60px,
+          rgba(255, 255, 255, 0.6) 50%,
+          transparent 51%
+        ),
+      radial-gradient(
+        1px 1px at 90px 190px,
+        rgba(255, 255, 255, 0.6) 50%,
+        transparent 51%
+      ),
+      radial-gradient(
+        1px 1px at 220px 20px,
+        rgba(255, 255, 255, 0.6) 50%,
+        transparent 51%
+      ),
+      /* subtle nebula tint */
+        radial-gradient(
+          500px 300px at 70% 20%,
+          rgba(88, 101, 242, 0.06),
+          transparent 60%
+        ),
+      radial-gradient(
+        400px 250px at 20% 70%,
+        rgba(255, 99, 132, 0.05),
+        transparent 60%
+      );
+    background-repeat: repeat;
+    background-size: 300px 300px, 350px 350px, 400px 400px, 250px 250px,
+      300px 300px, 350px 350px, 200px 200px, 250px 250px, 300px 300px, 100% 100%,
+      100% 100%;
+  }
+
+  /* Twinkle overlay */
+  .win96-desktop.starry-night::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: radial-gradient(
+        1px 1px at 15% 25%,
+        rgba(255, 255, 255, 0.7) 50%,
+        transparent 51%
+      ),
+      radial-gradient(
+        1px 1px at 35% 75%,
+        rgba(255, 255, 255, 0.7) 50%,
+        transparent 51%
+      ),
+      radial-gradient(
+        1px 1px at 75% 35%,
+        rgba(255, 255, 255, 0.7) 50%,
+        transparent 51%
+      ),
+      radial-gradient(
+        1px 1px at 85% 65%,
+        rgba(255, 255, 255, 0.7) 50%,
+        transparent 51%
+      );
+    background-size: 200px 200px, 250px 250px, 300px 300px, 350px 350px;
+    background-repeat: repeat;
+  animation: twinkle 6s ease-in-out infinite;
+  opacity: 0.5;
+    z-index: 0; /* behind CRT lines (z:1) */
+  }
+
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.45; }
+    50% { opacity: 0.3; }
+  }
+  /* Parallax drift layers */
+  /* position merged into main starry-night block above */
+  .starry-layer {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background-repeat: repeat;
+    mix-blend-mode: screen;
+  }
+  .starry-layer.layer-slow {
+    background-image: radial-gradient(
+      600px 400px at 75% 25%,
+      rgba(88, 101, 242, 0.05),
+      transparent 60%
+    );
+  animation: drift-slow 180s linear infinite;
+  }
+  .starry-layer.layer-medium {
+    background-image: radial-gradient(
+      500px 350px at 25% 65%,
+      rgba(255, 99, 132, 0.05),
+      transparent 60%
+    );
+  animation: drift-medium 120s linear infinite;
+  }
+  .starry-layer.layer-fast {
+    background-image: radial-gradient(
+      400px 300px at 55% 50%,
+      rgba(0, 255, 255, 0.04),
+      transparent 60%
+    );
+  animation: drift-fast 90s linear infinite;
+  }
+  @keyframes drift-slow {
+    0% {
+      background-position: 0 0;
+    }
+  100% { background-position: 600px 300px; }
+  }
+  @keyframes drift-medium {
+    0% {
+      background-position: 0 0;
+    }
+  100% { background-position: -800px 400px; }
+  }
+  @keyframes drift-fast {
+    0% {
+      background-position: 0 0;
+    }
+  100% { background-position: 900px -450px; }
+  }
+
+  /* Shooting stars */
+  .shooting-star {
+    position: fixed;
+    top: -10vh;
+    left: -10vw;
+    width: 2px;
+    height: 2px;
+    background: linear-gradient(90deg, #fff, rgba(255, 255, 255, 0));
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.7);
+  transform: rotate(20deg);
+  opacity: 0.7;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .shooting-star-1 { animation: shoot 15s ease-in-out infinite; animation-delay: 3s; }
+  .shooting-star-2 { animation: shoot 20s ease-in-out infinite; animation-delay: 9s; }
+  .shooting-star-3 { animation: shoot 25s ease-in-out infinite; animation-delay: 14s; }
+  @keyframes shoot {
+    0% { transform: translate(-10vw, -10vh) rotate(20deg); opacity: 0; }
+    8% { opacity: 1; }
+    40% { transform: translate(110vw, 60vh) rotate(20deg); opacity: 0.85; }
+    100% { transform: translate(120vw, 70vh) rotate(20deg); opacity: 0; }
+  }
+
+  /* Respect users that prefer reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    .starry-layer.layer-slow,
+    .starry-layer.layer-medium,
+    .starry-layer.layer-fast,
+    .win96-desktop.starry-night::after,
+    .shooting-star,
+    .shooting-star-1,
+    .shooting-star-2,
+    .shooting-star-3 { animation: none !important; }
   }
 }

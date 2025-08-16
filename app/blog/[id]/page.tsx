@@ -19,7 +19,7 @@ export default async function Post({ params }: PostPageProps) {
   try {
     const post = await getPostData(id);
     return <BlogPostPage post={post} />;
-  } catch (error) {
+  } catch {
     notFound();
   }
 }
